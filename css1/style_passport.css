@@ -1,0 +1,73 @@
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #main_fon{
+        height: 750px;
+        background-image: url(fon.png);
+        background-repeat: no-repeat;
+    }
+
+    nav a.active {
+        background:#3463ff6e;
+        color:#fff;
+    }
+
+    .str1 {
+        padding-top: 75px;
+        padding-left: 145px;
+    }
+
+    .str2 {
+        padding-top: 10px;
+        padding-left: 95px;
+        word-spacing: 0.65em;
+    }
+
+    .date{
+        padding-top: 37px;
+        padding-left: 105px;
+        word-spacing: 0.65em;
+    }
+
+    .code{
+        padding-top: 37px;
+        padding-left: 295px;
+        word-spacing: 0.65em;
+    }
+
+    .sign{
+        padding-top: 30px;
+        padding-left: 55px;
+    }
+
+    .sign_1{
+        padding-top: 60px;
+        padding-left: 115px;
+    }
+
+    #passphoto{
+        padding-top: 135px;
+        padding-left: 22px;
+    }
+
+    #surname{
+        padding-top: 0px;
+        padding-left: 250px;
+    }
+
+    #name{
+        padding-top: 37px;
+        padding-left: 250px;
+    }
+
+    #patronymic{
+        padding-top: 8px;
+        padding-left: 250px;
+    }
+
+    #gender{
+        padding-top: 10px;
+        padding-left: 40px;
+    }

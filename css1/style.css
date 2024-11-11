@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-image: url(yehome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250vh;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:target {
+    color: red;
+    font-weight: bold;
+}
+
+nav a.active {
+	background:#ffffff6e;
+	color:#fff;
+}
+
+.content {
+    padding: 20px;
+    background-color: #462b228c;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+.left {
+    display: block;
+    margin-left: 100px;
+    margin-right: 1000px;
+    width: 50%;
+}
+
+
+
+.center {
+    display: block;
+    margin-left: 100px;
+    margin-right: 1000px;
+    width: 50%;
+    text-align: center;
+}
+.right {
+    display: block;
+    margin-left: 1000px;
+    margin-right: 100px;
+    width: 50%; 
+}
+.box {
+    width: 400px;
+    height: 250px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+#box1{
+    background-color: #462b228c;
+    text-align: left;
+    padding-left: 10px;
+}
+#box2{
+    background-color: #462b228c;
+    text-align: left;
+    padding-left: 10px;
+}
+#box3{
+    background-color: #462b228c;
+    text-align: left;
+    padding-left: 10px;
+}
+.container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+ul li::marker {
+    content: "* ";
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
