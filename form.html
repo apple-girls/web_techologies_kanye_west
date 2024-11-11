@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="css1/style_3.css" rel="stylesheet">
+    <title>Формы. Отправляем данные на сервер</title>
+</head>
+
+<html>
+<body>
+    <header>
+        <nav>
+            <a href="http://finale11/Ye_spiritual.html" style="color: #000000;" id = 'head0'>Home</a>
+            <a href="http://finale11/yespiritual_about.html" style="color: #000000;">About</a>
+            <a href="http://finale11/yespiritual_funny.html" style="color: #000000;">Funny pics</a>
+            <a href="http://finale11/table.html" style="color: #000000;">Table</a>
+            <a href="https://finale11/form.html" class="active" style="color:#000000">Form</a>
+            <a href="https://finale11/pasport.html" style="color:#000000">passport</a>
+            <a href="https://finale11/riddle.html" style="color:#000000">algorithmic task</a>
+            <a href="https://finale11/photo_resize.html" style="color:#000000">image resize</a>
+            <a href="https://bully.yeezy.com/" target = '_blank'>Ye's website</a>
+        </nav>
+    </header>
+<h3 align="center">Формы. Отправляем данные на сервер</h3>
+<form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+    <p>Для поисковика:<input type="hidden" name="q" value="search"></p>
+    <p> ФИО:
+        <br>
+        <TEXTAREA cols=80 rows=1 name="textarea"></TEXTAREA>
+    </p>
+    <p>Ваш номер группы
+        <select name="group_num">
+            <OPTION value="1">1</OPTION>
+            <OPTION value="2">2</OPTION>
+            <OPTION value="3">3</OPTION>
+            <OPTION value="4">4</OPTION>
+            <OPTION value="5">5</OPTION>
+            <OPTION value="6">6</OPTION>
+            <OPTION value="7">7</OPTION>
+        </select>
+    </p>
+    <p> Сколько лет вы были фанатом Ye:
+        <br>
+        <input type="number" cols=80 rows=1 name="textarea">
+    </p>
+    <p> Ваша электронная почта:
+        <br>
+        <TEXTAREA cols=80 rows=1 name="textarea" ></TEXTAREA>
+    </p>
+    <p> Напишите мнение о последнем альбоме Ye:
+        <br>
+        <TEXTAREA cols=80 rows=4 name="textarea"></TEXTAREA>
+    </p>
+    <p>Что больше нравится?</p>
+    <label for="one">
+        <input type="radio" id="one" name="first_item" value="1" />
+        Vultures 1
+        <input type="radio" id="one" name="first_item" value="1" />
+        Vultures 2
+        </label>
+    <p>Выберите верные для вас суждения:</p>
+    <label for="two">
+        <input type="checkbox" id="two" name="first_item" value="1" />
+        The College dropout > Late Registration
+        <input type="checkbox" id="two" name="first_item" value="1" />
+        MBDTF > The Life of Pablo
+        <input type="checkbox" id="two" name="first_item" value="1" />
+        Jesus is King is overhated
+        </label>
+    <p>Дата: <input type="date" id = "current_date_input"  name = "user_date"></p>
+    <p>Пароль: <input type="Password" name="password" size=9></p>
+
+    <input type="hidden" name="function"  value="page">
+    <input type="hidden" name="page_id"  value="3">
+
+    <p>
+        <input type="Reset"  name="Reset"  value="Обновить">
+        <input type="Submit" name="submit"  value="Отправить">
+    </p>
+</form>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, '0'); 
+        const dd = String(today.getDate()).padStart(2, '0');
+        document.getElementById('current_date_input').value = `${yyyy}-${mm}-${dd}`;
+    });
+</script>
+</body>
+</html>

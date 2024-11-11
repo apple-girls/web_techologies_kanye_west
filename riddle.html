@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Определение знака числа</title>
+    <link href="css1/style_passport.css" rel="stylesheet"
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://finale11/Ye_spiritual.html" style="color: #000000;" id = 'head0'>Home</a>
+            <a href="http://finale11/yespiritual_about.html" style="color: #000000;">About</a>
+            <a href="http://finale11/yespiritual_funny.html" style="color: #000000;">Funny pics</a>
+            <a href="http://finale11/table.html" style="color: #000000;">Table</a>
+            <a href="https://finale11/form.html"  style="color:#000000">Form</a>
+            <a href="https://finale11/pasport.html" style="color:#000000">passport</a>
+            <a href="https://finale11/riddle.html" class="active" style="color:#000000">algorithmic task</a>
+            <a href="https://finale11/photo_resize.html" style="color:#000000">image resize</a>
+            <a href="https://bully.yeezy.com/" target = '_blank'>Ye's website</a>
+        </nav>
+        </header>
+    <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <p><input type="hidden" name="q" value="search"></p>
+        <p id="task">Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль.</p>
+        <input type="number" step="any" id="numberInput" placeholder="Введите вещественное число" required>
+        <button type="button" id="checkButton">Проверить</button>
+        <p id="result"></p>
+        <p id="error" style="color: red;"></p>
+    <script>
+        document.getElementById('checkButton').addEventListener('click', function() {
+            // Получаем введенное число
+            const inputNumber = parseFloat(document.getElementById('numberInput').value);
+            let resultMessage = '';
+
+            // Проверка числа
+            if (inputNumber > 0) {
+                resultMessage = 'Положительное число';
+            } else if (inputNumber < 0) {
+                resultMessage = 'Отрицательное число';
+            } else {
+                resultMessage = 'Ноль';
+            }
+
+            // Отображение результата на странице
+            document.getElementById('result').innerText = `Результат: ${resultMessage}`;
+
+            // Установка значения в параметр q для Google
+            document.getElementById('UserEnter').querySelector('input[name="q"]').value = resultMessage;
+
+            // Автоматическая отправка формы
+            document.getElementById('UserEnter').submit();
+        });
+    </script>
+    </form>
+</body>
+</html>
