@@ -50,11 +50,8 @@
                 const taskText = document.getElementById('task').innerText;
                 
                 // Combine task text and result message
-                const searchQuery = `${taskText} - ${resultMessage}`;
-                document.getElementById('UserEnter').querySelector('input[name="q"]').value = searchQuery;
-                
-                // Проверка результата
-                console.log(searchQuery); // You can check in console if the searchQuery is correct.
+                const searchQuery = `${resultMessage}`;
+                document.getElementById('UserEnter').querySelector('input[name="q"]').value = '${taskText}';
 
                 // Автоматическая отправка формы
                 document.getElementById('UserEnter').submit();
