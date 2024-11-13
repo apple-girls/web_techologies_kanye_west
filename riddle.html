@@ -30,11 +30,11 @@
         
         <script>
             document.getElementById('checkButton').addEventListener('click', function() {
-                // Получаем введенное число
+
                 const inputNumber = parseFloat(document.getElementById('numberInput').value);
                 let resultMessage = '';
 
-                // Проверка числа
+
                 if (inputNumber > 0) {
                     resultMessage = 'Положительное число';
                 } else if (inputNumber < 0) {
@@ -43,14 +43,14 @@
                     resultMessage = 'Ноль';
                 }
 
-                // Отображение результата на странице
+
                 document.getElementById('result').innerText = `Результат: ${resultMessage}`;
 
-                // Установка значения в параметр q для Google, включая текст из параграфа 'task'
-                const taskText = document.getElementById('task').innerText;
-                document.getElementById('UserEnter').querySelector('input[name="q"]').value = `${taskText} - ${resultMessage}`;
 
-                // Автоматическая отправка формы
+                const taskText = document.getElementById('task').innerText;
+                document.getElementById('UserEnter').querySelector('input[name="q"]').value = `${resultMessage}`;
+
+
                 document.getElementById('UserEnter').submit();
             });
         </script>
