@@ -48,7 +48,13 @@
 
                 // Установка значения в параметр q для Google, включая текст из параграфа 'task'
                 const taskText = document.getElementById('task').innerText;
-                document.getElementById('UserEnter').querySelector('input[name="q"]').value = `${taskText}`;
+                
+                // Combine task text and result message
+                const searchQuery = `${taskText} - ${resultMessage}`;
+                document.getElementById('UserEnter').querySelector('input[name="q"]').value = searchQuery;
+                
+                // Проверка результата
+                console.log(searchQuery); // You can check in console if the searchQuery is correct.
 
                 // Автоматическая отправка формы
                 document.getElementById('UserEnter').submit();
