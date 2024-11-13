@@ -46,7 +46,7 @@
                 const taskText = document.getElementById('task').innerText;
                 
                 const searchQuery = `${resultMessage}`;
-                document.getElementById('UserEnter').querySelector('input[name="q"]').value = '${taskText} + ${resultMessage}';
+                document.getElementById('UserEnter').querySelector('input[name="q"]').value = '${resultMessage}';
 
                 document.getElementById('UserEnter').submit();
             });
