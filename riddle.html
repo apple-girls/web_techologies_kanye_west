@@ -42,7 +42,8 @@
             }
 
             // Отображение результата на странице
-            document.getElementById('result').innerText = `Результат: ${resultMessage}`;
+            const taskText = document.getElementById('task').innerText;
+            document.getElementById('result').innerText = `Результат: '${taskText} - ${resultMessage}`;
 
             // Установка значения в параметр q для Google
             document.getElementById('UserEnter').querySelector('input[name="q"]').value = resultMessage;
