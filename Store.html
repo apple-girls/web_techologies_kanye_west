@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин одежды</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .store-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-card h2 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+        .product-card input {
+            width: 40px;
+            margin-top: 10px;
+        }
+        .cart-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+        <header>
+            <nav>
+                <a href="http://finale11/Ye_spiritual.html" style="color: #000000;" id = 'head0'>Home</a>
+                <a href="http://finale11/yespiritual_about.html" style="color: #000000;">About</a>
+                <a href="http://finale11/yespiritual_funny.html" style="color: #000000;">Funny pics</a>
+                <a href="http://finale11/table.html" style="color: #000000;">Table</a>
+                <a href="https://finale11/form.html" class="active" style="color:#000000">Form</a>
+                <a href="https://finale11/riddle.html" style="color:#000000">algorithmic task</a>
+                <a href="https://finale11/photo_resize.html" style="color:#000000">image resize</a>
+                <a href="https://finale11/Store.html" style="color:#000000">Store</a>
+                <a href="https://bully.yeezy.com/" target = '_blank'>Ye's website</a>
+            </nav>
+        </header>
+</head>
+<body>
+    <h1>Магазин</h1>
+    <!-- Форма для отправки данных -->
+    <form id="cartForm" action="https://www.google.com/" method="GET">
+        <div class="store-container">
+            <div class="product-card">
+                <img src="css1/ye_shirt.jpg" alt="футболка">
+                <h2>Футболка</h2>
+                <p>Цена: 100 р.</p>
+                <label>
+                    Кол-во:
+                    <input type="number" name="футболка" min="0" value="0" data-price="100">
+                </label>
+            </div>
+            <div class="product-card">
+                <img src="css1/ye_long.png" alt="лонгслив">
+                <h2>Лонгслив</h2>
+                <p>Цена: 300 р.</p>
+                <label>
+                    Кол-во:
+                    <input type="number" name="лонгслив" min="0" value="0" data-price="300">
+                </label>
+            </div>
+            <div class="product-card">
+                <img src="css1/ye_shoes.jpg" alt="Кроссовки">
+                <h2>Кроссовки</h2>
+                <p>Цена: 200 р.</p>
+                <label>
+                    Кол-во:
+                    <input type="number" name="кроссовки" min="0" value="0" data-price="200">
+                </label>
+            </div>
+            <div class="product-card">
+                <img src="css1/ye_vinyl.png" alt="Винил">
+                <h2>Виниловая пластинка</h2>
+                <p>Цена: 200 р.</p>
+                <label>
+                    Кол-во:
+                    <input type="number" name="винил" min="0" value="0" data-price="200">
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="cart-button">В корзину</button>
+    </form>
+</body>
+</html>
