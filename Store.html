@@ -3,63 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css1/style_4.css" rel="stylesheet">
     <title>Магазин одежды</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
-        .store-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            justify-items: center;
-        }
-        .product-card {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            width: 200px;
-            text-align: center;
-        }
-        .product-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .product-card h2 {
-            font-size: 18px;
-            margin: 10px 0 5px;
-        }
-        .product-card input {
-            width: 40px;
-            margin-top: 10px;
-        }
-        .cart-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        nav a.active {
-	background:#3463ff6e;
-	color:#fff;
-}
-    </style>
+
         <header>
             <nav>
-                <a href="index.html" style="color: #000000;" id = 'head0'>Home</a>
-                <a href="page1.html" style="color: #000000;">About</a>
-                <a href="yespiritual_funny.html" style="color: #000000;">Funny pics</a>
-                <a href="form.html" style="color:#000000">Form</a>
-                <a href="riddle.html" style="color:#000000">algorithmic task</a>
-                <a href="photo_resize.html" style="color:#000000">image resize</a>
-                <a href="Store.html" class="active" style="color:#000000">Store</a>
+                <a href="http://finale11/Ye_spiritual.html" style="color: #000000;" id = 'head0'>Home</a>
+                <a href="http://finale11/yespiritual_about.html" style="color: #000000;">About</a>
+                <a href="http://finale11/yespiritual_funny.html" style="color: #000000;">Funny pics</a>
+                <a href="https://finale11/form.html" style="color:#000000">Form</a>
+                <a href="https://finale11/riddle.html" style="color:#000000">algorithmic task</a>
+                <a href="https://finale11/photo_resize.html" style="color:#000000">image resize</a>
+                <a href="https://finale11/Store.html" class="active" style="color:#000000">Store</a>
                 <a href="https://bully.yeezy.com/" target = '_blank'>Ye's website</a>
             </nav>
         </header>
@@ -71,7 +26,9 @@
     <form id="cartForm" action="https://www.google.com/" method="GET">
         <div class="store-container">
             <div class="product-card">
-                <img src="css1/ye_shirt.jpg" alt="футболка">
+                <a href='css1/ye_shirt.png'>
+                <img src="css1/ye_shirt.png" alt="футболка">
+                </a>
                 <h2>Футболка</h2>
                 <p>Цена: 100 р.</p>
                 <label>
@@ -80,7 +37,9 @@
                 </label>
             </div>
             <div class="product-card">
-                <img src="css1/ye_long.png" alt="лонгслив">
+                <a href="css1/ye_long.png" target="_self">
+                    <img src="css1/ye_long.png" alt="лонг">
+                </a>
                 <h2>Лонгслив</h2>
                 <p>Цена: 300 р.</p>
                 <label>
@@ -89,7 +48,9 @@
                 </label>
             </div>
             <div class="product-card">
-                <img src="css1/ye_shoes.jpg" alt="Кроссовки">
+                <a href="css1/ye_shoes.png" target="_self">
+                    <img src="css1/ye_shoes.png" alt="Кроссовки">
+                </a>
                 <h2>Кроссовки</h2>
                 <p>Цена: 200 р.</p>
                 <label>
@@ -98,7 +59,9 @@
                 </label>
             </div>
             <div class="product-card">
+                <a href="css1/ye_vinyl.png">
                 <img src="css1/ye_vinyl.png" alt="Винил">
+            </a>
                 <h2>Виниловая пластинка</h2>
                 <p>Цена: 200 р.</p>
                 <label>
@@ -107,7 +70,9 @@
                 </label>
             </div>
             <div class="product-card">
+                <a href="css1/vulture_tee.png">
                 <img src="css1/vulture_tee.png" alt="футболка">
+            </a>
                 <h2>Футболка 'Vultures'</h2>
                 <p>Цена: 300 р.</p>
                 <label>
@@ -116,7 +81,9 @@
                 </label>
             </div>
             <div class="product-card">
+                <a href="css1/ye_pants.png">
                 <img src="css1/ye_pants.png" alt="штаны">
+            </a>
                 <h2>Спортивные штаны</h2>
                 <p>Цена: 400 р.</p>
                 <label>
@@ -126,24 +93,31 @@
             </div>
         </div>
         <button type="submit" class="cart-button">В корзину</button>
+        <script>
+            function openCenteredWindow(event, url) {
+                event.preventDefault(); 
+                const width = 600; 
+                const height = 400;
+                const left = (window.screen.width / 2) - (width / 2);
+                const top = (window.screen.height / 2) - (height / 2);
+                window.open(url, `width=${width},height=${height},top=${top},left=${left}`);
+            }
+        </script>
     </form>
+
     <script>
-        // Search functionality
         document.getElementById("searchBar").addEventListener("input", function() {
-            const searchQuery = this.value.toLowerCase(); // Get the search value and make it lowercase
-            const products = document.querySelectorAll(".product-card"); // Get all product cards
-    
-            // Loop through each product and check if it matches the search query
+            const searchQuery = this.value.toLowerCase(); 
+            const products = document.querySelectorAll(".product-card"); 
             products.forEach(product => {
-                const productName = product.querySelector("h2").textContent.toLowerCase(); // Get product name
+                const productName = product.querySelector("h2").textContent.toLowerCase(); 
                 if (productName.includes(searchQuery)) {
-                    product.style.display = "block"; // Show product if it matches
+                    product.style.display = "block";
                 } else {
-                    product.style.display = "none"; // Hide product if it doesn't match
+                    product.style.display = "none";
                 }
             });
         });
     </script>
-    
 </body>
 </html>
