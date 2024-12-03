@@ -1,0 +1,72 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    text-align: center;
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 170vh;
+
+}
+.store-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product-card h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+.product-card input {
+    width: 40px;
+    margin-top: 10px;
+}
+.cart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav a.active {
+background:#3463ff6e;
+color:#fff;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active {
+	background:#ffffff6e;
+	color:#fff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
