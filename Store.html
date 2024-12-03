@@ -66,6 +66,7 @@
 </head>
 <body>
     <h1>Магазин</h1>
+    <input type="text" id="searchBar" placeholder="Найти товар..." style="padding: 10px; margin-bottom: 20px; width: 50%; font-size: 16px;">
     <!-- Форма для отправки данных -->
     <form id="cartForm" action="https://www.google.com/" method="GET">
         <div class="store-container">
@@ -126,5 +127,23 @@
         </div>
         <button type="submit" class="cart-button">В корзину</button>
     </form>
+    <script>
+        // Search functionality
+        document.getElementById("searchBar").addEventListener("input", function() {
+            const searchQuery = this.value.toLowerCase(); // Get the search value and make it lowercase
+            const products = document.querySelectorAll(".product-card"); // Get all product cards
+    
+            // Loop through each product and check if it matches the search query
+            products.forEach(product => {
+                const productName = product.querySelector("h2").textContent.toLowerCase(); // Get product name
+                if (productName.includes(searchQuery)) {
+                    product.style.display = "block"; // Show product if it matches
+                } else {
+                    product.style.display = "none"; // Hide product if it doesn't match
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>
